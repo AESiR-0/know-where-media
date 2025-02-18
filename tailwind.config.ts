@@ -11,6 +11,12 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        'custom-purple': '#9747FF',
+        'custom-yellow': '#FEC81E',
+      },
+      fontFamily: {
+        spaceGrotesk: ['var(--font-space-grotesk)'],
+        oswald: ['var(--font-oswald)'],
       },
     },
   },

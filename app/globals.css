@@ -19,3 +19,29 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.landig-css {
+  color: #FFF;
+  text-align: center;
+  text-shadow: 5px 4px 0px #FEC81E;
+  -webkit-text-stroke-width: 2.4px;
+  -webkit-text-stroke-color: #000;
+  font-size: 120px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 110%;
+  /* 132px */
+  letter-spacing: -1.2px;
+  text-transform: uppercase;
+}
+
+.landing-text {
+  color: #FFF;
+  text-align: center;
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 38.4px;
+  /* 120% */
+  letter-spacing: -1.6px;
+}

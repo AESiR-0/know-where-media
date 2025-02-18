@@ -1,101 +1,54 @@
-import Image from "next/image";
+// pages/index.tsx
+import logo from "@/public/static/logo/nav_logo.png"
+import building from "@/public/static/landing/building.png"
+import type { NextPage } from 'next';
+import Image from 'next/image';
 
-export default function Home() {
+const Home: NextPage = () => {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
+    <div className="bg-black text-white min-h-screen flex items-center justify-center">
+      {/* Navigation bar */}
+      <div className="absolute flex justify-between w-full top-5 left-0 px-4 md:px-10">
         <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
+          src={logo}
+          alt="Knowhere Logo"
+          className="h-8 md:h-10 w-auto"
           priority
         />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+        <button className="border-purple-600 hover:bg-purple-600 transition-all duration-300 border-2 rounded-[4px] text-white px-3 py-1 md:px-4 md:py-2 text-sm md:text-base">
+          Let's Talk
+        </button>
+      </div>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+      {/* Main content */}
+      <div className="mt-20 text-center px-4 md:px-0">
+        <div className="gap-4 flex flex-col items-center md:space-y-3">
+          <div className="">
+            <h2 className="max-md:text-3xl md:text-5xl  font-spaceGrotesk font-semibold">
+              From Nowhere  to Knowhere
+            </h2>
+            <h1 className="landig-css max-w-6xl font-oswald uppercase px-4 md:px-20 lg:px-40 max-md:text-4xl md:text-8xl ">
+              SHOW YOUR HIDDEN TALENT
+            </h1>
+          </div>
+          <p className="text-3xl landing-text max-w-3xl px-32  flex justify-center items-center ">
+            We're redefining  how talent and brands connect, thrive, and shine
+          </p>
+          <button className="bg-custom-yellow hover:bg-custom-yellow/90 transition-all duration-300 text-black px-4 md:px-6 py-2 md:py-3 rounded font-bold text-sm md:text-base">
+            GET KNOWHERE
+          </button>
+          <div className="mt-4 md:mt-6">
             <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
+              src={building}
+              alt="Building"
+              className="h-32  w-auto mx-auto"
+              priority
             />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </div>
     </div>
   );
-}
+};
+
+export default Home;
