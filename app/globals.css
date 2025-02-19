@@ -14,9 +14,6 @@
   }
 }
 
-.hero-size{
-  height: 100vh;
-}
 .bg-campaign{
   background: linear-gradient(180deg, #270A40 0%, rgba(28, 20, 35, 0.00) 100%);
 }
