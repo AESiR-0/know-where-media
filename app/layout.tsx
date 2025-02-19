@@ -29,7 +29,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${spaceGrotesk.variable} ${oswald.variable} antialiased`}
+        className={`${spaceGrotesk.variable} bg-[#020003] ${oswald.variable} antialiased`}
       >
         {children}
       </body>
