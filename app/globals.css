@@ -14,23 +14,24 @@
   }
 }
 
-.bg-campaign{
+.bg-campaign {
   background: linear-gradient(180deg, #270A40 0%, rgba(28, 20, 35, 0.00) 100%);
 }
-.campaign-typography{
+
+.campaign-typography {
   color: #FFF;
-text-align: center;
-text-shadow: 5px 4px 0px #D43147;
--webkit-text-stroke-width: 2.4px;
--webkit-text-stroke-color: #000;
-font-family: Oswald;
-font-style: normal;
-font-weight: 700;
-font-size: 120px;
-padding: 0 80px;
-line-height: 110%;
-letter-spacing: -0.8px;
-text-transform: uppercase;
+  text-align: center;
+  text-shadow: 5px 4px 0px #D43147;
+  -webkit-text-stroke-width: 2.4px;
+  -webkit-text-stroke-color: #000;
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 120px;
+  padding: 0 80px;
+  line-height: 110%;
+  letter-spacing: -0.8px;
+  text-transform: uppercase;
 }
 
 body {
@@ -63,4 +64,33 @@ body {
   line-height: 38.4px;
   /* 120% */
   letter-spacing: -1.6px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Optional: Hide scrollbar for webkit browsers */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Optional: Hide scrollbar for Firefox */
+* {
+  scrollbar-width: none;
+}
+
+.metrics-typography {
+  color: #FFF;
+  text-shadow: 5px 4px 0px #FEC81E;
+  -webkit-text-stroke-width: 2.4px;
+  -webkit-text-stroke-color: #000;
+  font-family: Oswald;
+  font-size: 120px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 96px;
+  /* 80% */
+  letter-spacing: -1.2px;
+  text-transform: uppercase;
 }

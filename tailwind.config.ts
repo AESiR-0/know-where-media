@@ -19,6 +19,18 @@ export default {
         spaceGrotesk: ['var(--font-space-grotesk)'],
         oswald: ['var(--font-oswald)'],
       },
+      boxShadow: {
+        custom: "8px 8px 0px 0px #28013E",
+      },
+      textStrokeWidth: {
+        2: "2.4px",
+      },
+      textStrokeColor: {
+        black: "#0000",
+      },
+      textShadow: {
+        yellow: "5px 4px 0px #FEC81E",
+      },
     },
   },
   plugins: [],
