@@ -13,7 +13,7 @@ const BigImpact = () => {
     ];
 
     return (
-        <section style={{ backgroundImage: `url(${bg.src})` }} className=" bg-cover gap-8    min-h-screen h-screen flex items-center justify-center flex-col py-16 text-white text-center">
+        <section style={{ backgroundImage: `url(${bg.src})` }} className=" bg-contain bg-no-repeat gap-8    h-[80vh] flex justify-center items-center  flex-col py-16 text-white text-center">
             {/* Title */}
             <h2 style={{ WebkitTextStrokeWidth: "1px", WebkitTextStrokeColor: "#000" }} className="text-6xl font-oswald font-bold uppercase tracking-tight  ">
                 Big Names, Bigger Impact

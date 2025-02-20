@@ -19,10 +19,10 @@ export default function Metrics() {
                         <div className="-bottom-20 -left-5 absolute animate-fade-in">
                             <Image src={leftSticker} alt="bg" height={100} width={100} className="object-cover" />
                         </div>
-                        <h1 className="text-[120px] font-oswald font-bold uppercase leading-[132px] tracking-tight stroke-black stroke-[2.4px]">
+                        <h1 className="text-[120px] text-white font-oswald font-bold uppercase leading-[132px] tracking-tight stroke-black stroke-[2.4px]">
                             Louder.
                         </h1>
-                        <h1 className="text-[120px] font-oswald font-bold uppercase leading-[132px] tracking-tight stroke-black stroke-[2.4px]">
+                        <h1 className="text-[120px] text-white font-oswald font-bold uppercase leading-[132px] tracking-tight stroke-black stroke-[2.4px]">
                             Bigger.
                         </h1>
                         <h1 className="text-[120px] metrics-typography font-oswald font-bold uppercase leading-[132px] tracking-tight stroke-black stroke-[2.4px] text-shadow-[5px_4px_0px_#FEC81E]">
